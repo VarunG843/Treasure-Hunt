@@ -25,18 +25,7 @@ class Security {
         this.button3 = createButton('Check');
         this.button3.position(100,320);
         this.button3.style('background', 'lightgrey');
-        
-        this.button3 = createInput('Check');
-        this.button3.position(100,320);
-        this.button3.style('background', 'lightgrey');
-    
-        this.button3 = createButton();
-        this.button3.position(100);
-        this.button3.style('background', 'lightgrey');
-
-        this.button3 = Button('Check');
-        this.button3(100,320);
-        this.button3.style('background', 'lightgrey');
+       
     }
 
     display(){
@@ -59,19 +48,9 @@ class Security {
 
         this.button3.mousePressed(() => {
             if(system.authenticate(accessCode3,this.access3.value())){
-          
                 this.button3.hide();
                 this.access3.hide();
-
-                this.button3.hide;
-                this.access3.hide;
-
-                this.hide();
-                this.hide();
-
-                this.button3.hidden();
-                this.access3.hidden();
-                
+               
                 score++;
             }
         });
